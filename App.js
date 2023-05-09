@@ -1,23 +1,13 @@
-import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { createDrawerNavigator } from '@react-navigation/drawer';
-
-
-
-const Drawer = createDrawerNavigator();
-
-
-
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import Route from './src/routes/Route';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName='Home'>
-      <Drawer.Screen name="Homes" component={HomeStackScreen}/>
-      <Drawer.Screen name="Detail" component={DetailsStackScreen}/>
-      </Drawer.Navigator>
+      <Route />
     </NavigationContainer>
-  )
-}
+  );
+};
 
 export default App;
