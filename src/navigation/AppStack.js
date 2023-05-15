@@ -3,6 +3,7 @@ import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
@@ -37,20 +38,11 @@ const AppStack = () => {
         }}
       />
       <Drawer.Screen
-        component={ProfileScreen}
-        name="Profile"
-        options={{
-          drawerIcon: ({color}) => (
-            <Ionicons name="home-outline" size={22} color={color} />
-          ),
-        }}
-      />
-      <Drawer.Screen
         component={MyvScreens}
         name="My Vehicles"
         options={{
           drawerIcon: ({color}) => (
-            <Ionicons name="home-outline" size={22} color={color} />
+            <Ionicons name="car-sport-outline" size={22} color={color} />
           ),
         }}
       />
@@ -59,7 +51,7 @@ const AppStack = () => {
         name="History"
         options={{
           drawerIcon: ({color}) => (
-            <Ionicons name="home-outline" size={22} color={color} />
+            <FontAwesome5 name="history" size={22} color={color} />
           ),
         }}
       />
@@ -68,7 +60,7 @@ const AppStack = () => {
         name="Invoice"
         options={{
           drawerIcon: ({color}) => (
-            <Ionicons name="home-outline" size={22} color={color} />
+            <FontAwesome5 name="file-invoice" size={22} color={color} />
           ),
         }}
       />
@@ -77,7 +69,7 @@ const AppStack = () => {
         name="Orders"
         options={{
           drawerIcon: ({color}) => (
-            <Ionicons name="home-outline" size={22} color={color} />
+            <Ionicons name="md-cart-outline" size={22} color={color} />
           ),
         }}
       />
@@ -86,7 +78,7 @@ const AppStack = () => {
         name="Settings"
         options={{
           drawerIcon: ({color}) => (
-            <Ionicons name="home-outline" size={22} color={color} />
+            <Ionicons name="settings-outline" size={22} color={color} />
           ),
         }}
       />

@@ -11,7 +11,7 @@ import {
   DrawerItemList,
 } from '@react-navigation/drawer';
 
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const CustomDrawer = props => {
@@ -35,7 +35,7 @@ const CustomDrawer = props => {
           <Text style={{color: '#fff', fontSize: 18}}>John Doe</Text>
           <View style={{flexDirection: 'row'}}>
             <Text style={{color: '#fff'}}>299 Ms-Coins</Text>
-            <FontAwesome5 name="coin" size={14} color="#fff" />
+            <FontAwesome5 name="coins" size={14} color="#fff" />
           </View>
         </ImageBackground>
         <View style={{flex: 1, backgroundColor: '#fff', paddingTop: 10}}>
